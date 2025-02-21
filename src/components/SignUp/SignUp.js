@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
-import { FaFacebook } from 'react-icons/fa';
-import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import './SignUp.css';
 
 const SignUp = () => {
@@ -24,16 +23,6 @@ const SignUp = () => {
 
   const handleGoogleSignIn = async () => {
     const provider = new GoogleAuthProvider();
-    try {
-      await signInWithPopup(auth, provider);
-      navigate('/home');
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
-  const handleFacebookSignIn = async () => {
-    const provider = new FacebookAuthProvider();
     try {
       await signInWithPopup(auth, provider);
       navigate('/home');
@@ -93,9 +82,6 @@ const SignUp = () => {
           <div className="social-buttons">
             <button className="social-btn google" onClick={handleGoogleSignIn}>
               <FcGoogle className="text-xl" /> Google
-            </button>
-            <button className="social-btn facebook" onClick={handleFacebookSignIn}>
-              <FaFacebook className="text-xl" /> Facebook
             </button>
           </div>
         </div>
