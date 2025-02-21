@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # College Management System
 
 A comprehensive web-based platform for managing college administrative processes transparently and efficiently.
@@ -75,3 +76,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Shailesh Baviskar - [@ShaileshBaviskar](https://github.com/ShaileshBaviskar)
+=======
+# collegeerp
+>>>>>>> 8b20a58c42cfa6a155ad0482e8ebb306f081d604
