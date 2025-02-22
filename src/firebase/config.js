@@ -4,13 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  // Replace with your Firebase configuration
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBszRTKMKtgrhGAfQvn1u_U4sTFaX0cpXQ",
+  authDomain: "collegeerp-96236.firebaseapp.com",
+  projectId: "collegeerp-96236",
+  storageBucket: "collegeerp-96236.firebasestorage.app",
+  messagingSenderId: "188014603856",
+  appId: "1:188014603856:web:7487224312af7949c76b55"
 };
 
 const app = initializeApp(firebaseConfig);

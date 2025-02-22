@@ -85,11 +85,6 @@
   color: #ea4335;
 }
 
-.social-btn.facebook {
-  background-color: #1877f2;
-  color: white;
-}
-
 .illustration {
   flex: 1;
   display: flex;
@@ -111,4 +106,18 @@
   background-color: #fee2e2;
   border-radius: 0.375rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-section {
+    padding: 1.5rem;
+  }
+
+  .illustration {
+    display: none;
+  }
 }
